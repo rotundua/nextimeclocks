@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTime - Magazin Ceasuri de Perete</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f4f4f4; scroll-behavior: smooth; }
+        header { background-color: #222; color: white; padding: 20px; text-align: center; }
+        h1.logo { color: #ff69b4; font-size: 3rem; margin: 0; text-transform: uppercase; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+        nav ul li a:hover { color: #ff69b4; }
+        
+        .hero { 
+            /* Imagine de fundal cu un interior modern unde stă un ceas */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1516715667182-c515c1e5c3e2?auto=format&fit=crop&w=1200&q=80');
+            height: 400px; background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center; color: white; flex-direction: column;
+            text-align: center;
+        }
+
+        .container { width: 85%; margin: 20px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .produs { background: white; padding: 20px; border-radius: 12px; text-align: center; box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: 0.3s; }
+        .produs:hover { transform: translateY(-10px); }
+        .produs img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+        .produs h3 { color: #222; margin: 15px 0 5px; }
+        .pret { color: #ff69b4; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; }
+        
+        button { background-color: #ff69b4; color: white; border: none; padding: 12px 25px; cursor: pointer; border-radius: 50px; font-weight: bold; font-size: 1rem; transition: 0.3s; }
+        button:hover { background-color: #e91e63; box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4); }
+        
+        .contact-info { background: white; padding: 40px; margin: 50px auto; width: 60%; text-align: center; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        footer { background-color: #222; color: white; text-align: center; padding: 30px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">NexTime</h1>
+        <p>Timpul tău, stilul tău.</p>
+        <nav>
+            <ul>
+                <li><a href="#acasa">Acasă</a></li>
+                <li><a href="#produse">Produse</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="acasa" class="hero">
+        <h2 style="font-size: 2.5rem;">Nu trăi în trecut, alege NexTime!</h2>
+        <p style="font-size: 1.2rem;">Descoperă ceasurile care transformă orice cameră.</p>
+        <a href="#produse"><button>Vezi Colecția</button></a>
+    </section>
+
+    <h2 style="text-align: center; margin-top: 50px; font-size: 2rem; color: #222;">Modele Recomandate</h2>
+    
+    <section id="produse" class="container">
+        <div class="produs">
+            <img src="https://s9.vivre.eu/upload/2025/02/thumbs/67847937-884ASF1112-20-201.1400x1400.jpg" alt="Ceas de perete modern">
+            <h3>Ceas modern</h3>
+            <p>Un model din sticlă, ideal pentru un decor elegant.</p>
+            <p class="pret">250 RON</p>
+            <button onclick="alert('Produsul Ceas modern a fost adăugat în coș!')">Adaugă în coș</button>
+        </div>
+
+        <div class="produs">
+            <img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80" al" alt="Ceas de perete clasic negru">
+            <h3>Ceas clasic</h3>
+            <p>Design negru mat cu ace aurii pentru interioare moderne.</p>
+            <p class="pret">159 RON</p>
+            <button onclick="alert('Produsul Ceas clasic a fost adăugat în coș!')">Adaugă în coș</button>
+        </div>
+
+        <div class="produs">
+            <img src="https://www.miahome.ro/516-large_default/ceas-de-perete-luna.jpg" alt="Ceas de perete minimalist">
+            <h3>Minimalist White&Green</h3>
+            <p>Curat, silențios și discret. Perfect pentru birou sau dormitor.</p>
+            <p class="pret">180 RON</p>
+            <button onclick="alert('Produsul Minimalist White&Green a fost adăugat în coș!')">Adaugă în coș</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-info">
+        <h2>Contactează NexTime</h2>
+        <p>Ai întrebări? Echipa noastră este gata să te ajute.</p>
+        <p>📧 Email: <strong>nextimeclocks2025@gmail.com</strong></p>
+        <p>📞 Telefon: <strong>0712 345 678 </strong></p>
+        <p>📍 Showroom: Iași, Bulevardul Carol 1</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NexTime - Rafinament în fiecare secundă.</p>
+    </footer>
+
+</body>
+</html>
